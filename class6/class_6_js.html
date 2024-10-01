@@ -1,0 +1,51 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<!-- Selecting and modifying DOM elements, Event handlingm Dynamic content updates -->
+
+
+
+
+</head>
+
+<body>
+	<!-- Selecting by ID: -->
+	<p id="myParagraph">This is a paragraph.</p>
+	<script>
+		var paragraph = document.getElementById("myParagraph");
+		console.log(paragraph); // This selects the paragraph element
+	</script>
+
+	<!-- Selecting by Class: -->
+	<div class="myDiv">First Div</div>
+	<div class="myDiv">Second Div</div>
+	<script>
+		var divs = document.getElementsByClassName("myDiv");
+		console.log(divs); // This selects all div elements with class 'myDiv'
+	</script>
+
+	<!-- Selecting by Tag: -->
+	<h1>Title</h1>
+	<h1>Subtitle</h1>
+	<script>
+		var headings = document.getElementsByTagName("h1");
+		console.log(headings); // Selects all <h1> elements
+	</script>
+
+	<!-- Selecting with Query Selector: -->
+	<div class="container">
+		<p id="text">Sample Text</p>
+	</div>
+	<script>
+		var text = document.querySelector(".container p"); // Selects the <p> inside <div class="container">
+		console.log(text);
+	</script>
+
+	
+
+</body>
+
+</html>

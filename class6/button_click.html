@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling Example</title>
+</head>
+
+<body>
+
+  <!-- Button Click -->
+  <button id="myButton">Click me</button>
+  <script>
+    var button = document.getElementById("myButton");
+    button.addEventListener("click", function () {
+      alert("Button clicked!");
+    });
+  </script>
+
+  <p id="myParagraph">Hover over me!</p>
+  <script>
+    var paragraph = document.getElementById("myParagraph");
+    paragraph.addEventListener("mouseover", function () {
+      paragraph.style.color = "red"; // Change text color on hover
+    });
+
+    paragraph.addEventListener("mouseout", function () {
+      paragraph.style.color = "black"; // Reset color when mouse leaves
+    });
+  </script>
+
+
+  <input type="text" id="myInput" placeholder="Type something...">
+  <script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function (event) {
+      console.log("Key pressed: " + event.key); // Log the key that was pressed
+    });
+  </script>
+
+
+  <!-- Removing Event Listeners -->
+  <button id="myButton">Click me</button>
+  <script>
+    var button = document.getElementById("myButton");
+
+    function handleClick() {
+      alert("Button clicked!");
+    }
+
+    button.addEventListener("click", handleClick);
+    // Remove the event listener after 5 seconds
+    setTimeout(function () {
+      button.removeEventListener("click", handleClick);
+    }, 5000);
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Changing Text Content: -->
+  <p id="myParagraph">Old Text</p>
+  <script>
+    var paragraph = document.getElementById("myParagraph");
+    paragraph.innerText = "New Text"; // Changes the text inside the paragraph
+  </script>
+</body>
+
+<!-- Changing HTML Content: -->
+<div id="content">Old content</div>
+<script>
+  var content = document.getElementById("content");
+  content.innerHTML = "<strong>New content</strong>";  // Replaces with bold text
+</script>
+
+<!-- Changing Attributes: -->
+<img id="myImage" src="old.jpg" alt="Old Image">
+<script>
+  var image = document.getElementById("myImage");
+  image.setAttribute("src", "new.jpg");  // Changes the image source
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+ 
+<!-- Changing Attributes: -->
+<img id="myImage" src="old.jpg" alt="Old Image">
+<script>
+  var image = document.getElementById("myImage");
+  image.setAttribute("src", "new.jpg");  // Changes the image source
+</script>
+
+<!-- Changing Styles: -->
+<p id="styledParagraph">Style me!</p>
+<script>
+  var paragraph = document.getElementById("styledParagraph");
+  paragraph.style.color = "blue";  // Changes the text color to blue
+  paragraph.style.fontSize = "20px";  // Changes the font size
+</script>
+
+
+<p id="message">Hello, world!</p>
+<button id="changeButton">Change Text</button>
+<script>
+  var button = document.getElementById("changeButton");
+  var message = document.getElementById("message");
+
+  button.addEventListener("click", function() {
+    message.innerText = "Text has been changed!";  // Changes text when button is clicked
+  });
+</script>
+
+</html>
