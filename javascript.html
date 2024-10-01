@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validated HTML Form</title>
+    <s
+</head>
+
+<body>
+    <script>
+        // var name = "Alice";  // Using var
+        // const age = 30;        // Using let
+        // const pi = 3.14;     // Using const (constant value)
+
+        // const num = 42;                  // Number
+        // const greeting = "Hello";        // String
+        // const isActive = true;           // Boolean
+        // const data = null;               // Null
+        // let notAssigned;                // Undefined
+        // const person = { name: "Alice", age: 30 }; // Object
+        // const fruits = ["apple", "banana", "cherry"]; // Array
+
+
+         const a = 10;
+         const b = 5;
+
+        console.log(a + b); // Addition: 15
+        console.log(a - b); // Subtraction: 5
+        console.log(a * b); // Multiplication: 50
+        console.log(a / b); // Division: 2
+        console.log(a % b); // Modulus (remainder): 0
+
+        var c = 10;
+        c += 5; // c = c + 5, c is now 15
+        c -= 3; // c = c - 3, c is now 12
+        c *= 2; // c = c * 2, c is now 24
+        c /= 4; // c = c / 4, c is now 6
+
+        console.log(5 == "5");  // Loose equality: true
+        console.log(5 === "5"); // Strict equality: false
+        console.log(5 != "5");  // Loose inequality: false
+        console.log(5 !== "5"); // Strict inequality: true
+        console.log(5 > 3);     // Greater than: true
+        console.log(5 < 10);    // Less than: true
+        console.log(5 >= 5);    // Greater than or equal: true
+        console.log(5 <= 4);    // Less than or equal: false
+
+         var x = true;
+         var y = false;
+
+        console.log(x && y); // AND: false
+        console.log(x || y); // OR: true
+        console.log(!x);     // NOT: false
+
+
+        //Function Declaration
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        console.log(greet("Alice")); // Output: Hello, Alice!
+
+        //Function Expression
+        const greetExp = function (name) {
+            return "Hello, " + name + "!";
+        };
+
+        console.log(greetExp("Bob")); // Output: Hello, Bob!
+
+        //Arrow Function
+        const greetArrow = (name) => {
+            return "Hello, " + name + "!";
+        };
+
+        console.log(greetArrow("Charlie")); // Output: Hello, Charlie!
+
+
+        //mplicit Return (Arrow Function)
+        const greetImplicit = name => "Hello, " + name + "!";
+        console.log(greetImplicit("Dana")); // Output: Hello, Dana!
+
+        //Parameters and Arguments
+        function add(a, b) {
+            return a + b;
+        }
+        console.log(add(3, 5)); // Output: 8
+
+        //default values for parameters:
+        function multiply(a, b = 1) {
+            return a * b;
+        }
+        console.log(multiply(5)); // Output: 5 (since b defaults to 1)
+
+
+        //Global Scope
+        const globalVar = "I'm global!";
+        function showGlobal() {
+            console.log(globalVar);
+        }
+        showGlobal(); // Output: I'm global!
+
+        //Function Scope 
+        function myFunction() {
+            const localVar = "I'm local!";
+            console.log(localVar);
+        }
+        myFunction(); // Output: I'm local!
+        // console.log(localVar); // Error: localVar is not defined
+
+        //Block Scope
+        if (true) {
+            const blockVar = "I'm in a block!";
+            console.log(blockVar); // Output: I'm in a block!
+        }
+        // console.log(blockVar); // Error: blockVar is not defined
+
+
+    </script>
+</body>
+
+</html>
