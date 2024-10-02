@@ -14,20 +14,21 @@
     var paragraph = document.getElementById("myParagraph");
     paragraph.innerText = "New Text"; // Changes the text inside the paragraph
   </script>
+  <!-- Changing HTML Content: -->
+  <div id="content">Old content</div>
+  <script>
+    var content = document.getElementById("content");
+    content.innerHTML = "<strong>New content</strong>";  // Replaces with bold text
+  </script>
+
+  <!-- Changing Attributes: -->
+  <img id="myImage" src="old.jpg" alt="Old Image">
+  <script>
+    var image = document.getElementById("myImage");
+    image.setAttribute("src", "new.jpg");  // Changes the image source
+  </script>
 </body>
 
-<!-- Changing HTML Content: -->
-<div id="content">Old content</div>
-<script>
-  var content = document.getElementById("content");
-  content.innerHTML = "<strong>New content</strong>";  // Replaces with bold text
-</script>
 
-<!-- Changing Attributes: -->
-<img id="myImage" src="old.jpg" alt="Old Image">
-<script>
-  var image = document.getElementById("myImage");
-  image.setAttribute("src", "new.jpg");  // Changes the image source
-</script>
 
 </html>

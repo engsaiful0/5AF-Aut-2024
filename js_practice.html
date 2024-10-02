@@ -9,22 +9,24 @@
 		const age = 30;
 		const pi = 3.14;
 
-		function add(a, b=1)
-		{
-			console.log("b=",b);
-			return a* b;
+		function add(a, b = 1) {
+			console.log("b=", b);
+			return a * b;
 		}
-		console.log("Result=",add(5,6));
+		console.log("Result=", add(5, 6));
 		//document.write("Hello world");
-		document.write("Result=",add(10,12));
-		
-		alert(add(2,3));
+		document.write("Result=", add(10, 12));
+
+		//alert(add(2, 3));
+		function dataShow(data) {
+			console.log("data=", data);
+		}
 	</script>
 
 </head>
 
 <body>
-
+	<input id="studentName" oninput="dataShow(this.value)">
 
 
 </body>

@@ -15,24 +15,33 @@
 	<!-- Selecting by ID: -->
 	<p id="myParagraph">This is a paragraph.</p>
 	<script>
+		console.log("#############Start,This is the selecting by ID ########");
 		var paragraph = document.getElementById("myParagraph");
 		console.log(paragraph); // This selects the paragraph element
+		console.log("#############Entd,This is the selecting by ID ########");
 	</script>
 
 	<!-- Selecting by Class: -->
 	<div class="myDiv">First Div</div>
 	<div class="myDiv">Second Div</div>
+	<div class="myDiv">Third Div</div>
+	<h1 class="myDiv"> This is the header with myDiv Class</div>
 	<script>
+		console.log("### Start, selectin by class name");
 		var divs = document.getElementsByClassName("myDiv");
 		console.log(divs); // This selects all div elements with class 'myDiv'
+		console.log("### End, selectin by class name");
 	</script>
 
 	<!-- Selecting by Tag: -->
 	<h1>Title</h1>
 	<h1>Subtitle</h1>
 	<script>
+		console.log("##Start, selecting by Tag name ###");
 		var headings = document.getElementsByTagName("h1");
 		console.log(headings); // Selects all <h1> elements
+			console.log("##End, selecting by Tag name ###");
+		
 	</script>
 
 	<!-- Selecting with Query Selector: -->
