@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional Statements (if, else if, switch)</title>
+</head>
+
+<body>
+
+  <script>
+    try {
+      let result = 10 / 0; // This won't throw an error, just returns Infinity
+      if (result === Infinity) {
+        throw new Error("Cannot divide by zero!");
+      }
+      console.log("Result: " + result);
+    } catch (error) {
+      console.log("Error caught: " + error.message);
+    } finally {
+      console.log("This will run regardless of an error.");
+    }
+  </script>
+
+</body>
+
+</html>

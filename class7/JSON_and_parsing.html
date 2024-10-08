@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON and Parsing</title>
+</head>
+
+<body>
+
+  <script>
+    // JSON object as a string
+    let jsonString = '{"name": "Alice", "age": 25, "isStudent": true}';
+
+    // Parsing JSON string to JavaScript object
+    let jsonObject = JSON.parse(jsonString);
+    console.log(jsonObject.name); // Output: Alice
+    console.log(jsonObject.age); // Output: 25
+    console.log(jsonObject.isStudent); // Output: true
+
+    // Modifying the JavaScript object
+    jsonObject.age = 26;
+
+    // Converting the object back to a JSON string
+    let newJsonString = JSON.stringify(jsonObject);
+    console.log(newJsonString); // Output: {"name":"Alice","age":26,"isStudent":true}
+  </script>
+
+</body>
+
+</html>

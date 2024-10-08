@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Creation and Manipulation</title>
+</head>
+
+<body>
+
+  <script>
+    // Object creation using object literal syntax
+    let person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+
+    // Accessing object properties and methods
+    console.log(person.firstName); // Output: John
+    console.log(person.fullName()); // Output: John Doe
+
+    // Adding a new property
+    person.email = "john.doe@example.com";
+    console.log(person.email); // Output: john.doe@example.com
+
+    // Modifying a property
+    person.age = 35;
+    console.log(person.age); // Output: 35
+
+    // Deleting a property
+    delete person.lastName;
+    console.log(person.lastName); // Output: undefined
+  </script>
+
+</body>
+
+</html>

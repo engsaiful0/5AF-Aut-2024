@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods and Iteration</title>
+</head>
+
+<body>
+
+  <script>
+    // Creating an array
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    // Array methods
+
+    // Adding an element to the end
+    fruits.push("Orange");
+    console.log(fruits); // Output: ["Apple", "Banana", "Mango", "Orange"]
+
+    // Removing the last element
+    fruits.pop();
+    console.log(fruits); // Output: ["Apple", "Banana", "Mango"]
+
+    // Finding the index of an element
+    let index = fruits.indexOf("Banana");
+    console.log(index); // Output: 1
+
+    // Iterating over an array using forEach
+    fruits.forEach(function (fruit, index) {
+      console.log(`${index}: ${fruit}`);
+    });
+    // Output:
+    // 0: Apple
+    // 1: Banana
+    // 2: Mango
+
+    // Iterating over an array using map (returns a new array)
+    let upperFruits = fruits.map(fruit => fruit.toUpperCase());
+    console.log(upperFruits); // Output: ["APPLE", "BANANA", "MANGO"]
+
+    // Filtering an array
+    let filteredFruits = fruits.filter(fruit => fruit.startsWith("B"));
+    console.log(filteredFruits); // Output: ["Banana"]
+
+    // Reducing an array
+    let totalLength = fruits.reduce((total, fruit) => total + fruit.length, 0);
+    console.log(totalLength); // Output: 16
+  </script>
+
+</body>
+
+</html>
