@@ -2,16 +2,12 @@
 
 include 'db_connection.php';
 
-//echo '<pre>';
-//print_r($connection);
-//print_r($_POST);
+$id=$_POST['id'];
 $studentName=$_POST['studentName'];
 $roll=$_POST['roll'];
 $mobile=$_POST['mobile'];
-mysqli_query($connection,"INSERT INTO students (studentName,roll,mobile) values('$studentName','$roll','$mobile')");
+mysqli_query($connection,"UPDATE students SET studentName='$studentName', roll='$roll', mobile='$mobile' WHERE id='$id'");
 
 header("location:index.php"); //Redirect to index.php
-
-
 
 ?>

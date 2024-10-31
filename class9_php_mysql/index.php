@@ -30,6 +30,12 @@
 
     </table>
     </form>
+    <?php
+
+include 'view.php';
+    
+    
+    ?>
 </body>
 
 </html>
