@@ -1,7 +1,14 @@
 <?php
-include 'db_connection.php';
-$query = mysqli_query($connection, "SELECT * FROM students");
+session_start(); // Start the session
 
+// Check if the user is logged in
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php'); // Redirect to the login page
+    exit();
+}
+
+include 'db_connection.php'; // Include database connection
+$query = mysqli_query($connection, "SELECT * FROM students");
 ?>
 <table border="1">
     <tr>
