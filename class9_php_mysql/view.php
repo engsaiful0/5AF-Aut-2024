@@ -10,6 +10,14 @@ if (!isset($_SESSION['username'])) {
 include 'db_connection.php'; // Include database connection
 $query = mysqli_query($connection, "SELECT * FROM students");
 ?>
+<h1>
+    <?php
+    echo $_SESSION['full_name']
+    ?>
+</h1>
+<a href="logout.php">
+    Log Out
+</a>
 <table border="1">
     <tr>
         <td>ID</td>
