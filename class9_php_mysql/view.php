@@ -26,7 +26,6 @@ $query = mysqli_query($connection, "SELECT * FROM students");
                 <?php if (!empty($row['image'])): ?>
                     <img src="uploads/<?php echo htmlspecialchars($row['image']); ?>" style="width: 150px; height: 150px;" alt="Student Image">
                 <?php endif; ?>
-
             </td>
             <td>
                 <a href="update.php?id=<?php echo $id ?>">Update</a>

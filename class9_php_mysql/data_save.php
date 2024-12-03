@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     if (mysqli_query($connection, $sql)) {
                         echo "Record saved successfully.";
-                        header("location:index.php"); // Redirect to index.php
+                        header("location:view.php"); // Redirect to index.php
                     } else {
                         echo "Error: " . mysqli_error($connection);
                     }

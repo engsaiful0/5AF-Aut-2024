@@ -3,13 +3,13 @@
         <tr>
             <td>Name</td>
             <td>
-                <input type="text" name="studentName" required>
+                <input type="text" name="studentName" >
             </td>
         </tr>
         <tr>
             <td>Roll</td>
             <td>
-                <input type="text" name="roll" required>
+                <input type="text" name="roll" >
             </td>
         </tr>
         <tr>
@@ -34,13 +34,13 @@
         <tr>
             <td>Mobile</td>
             <td>
-                <input type="text" name="mobile" required>
+                <input type="text" name="mobile" >
             </td>
         </tr>
         <tr>
             <td>Image</td>
             <td>
-                <input type="file" name="image" required>
+                <input type="file" name="image" >
             </td>
         </tr>
         <tr>
